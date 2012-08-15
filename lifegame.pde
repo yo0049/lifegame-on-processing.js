@@ -29,7 +29,7 @@ void setup()
 
 void draw(){ 
     background(0);
-   // stroke(255);
+    // stroke(255);
     for(int i=0 ;i<f_hight;i++){
         for(int j=0 ;j<f_width;j++){
             if(f[i][j]){
@@ -48,6 +48,7 @@ void draw(){
     }
     for(int i=0;i<tmpf.length; i++){
         arrayCopy(tmpf[i],f[i]);}
+    message("framecount:"+frameCount);
 }
 
 int check_round(int x,int y){
